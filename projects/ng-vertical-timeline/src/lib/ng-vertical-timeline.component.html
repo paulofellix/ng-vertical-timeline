@@ -1,24 +1,24 @@
 <div class="timeline">
 
-    <div *ngFor="let item of data">
+  <div *ngFor="let item of data">
 
-        <div class="container left" [ngClass]="isPair(item.id)?'left':'right'">
+    <div class="container left" [ngClass]="isPair(item.id)?'left':'right'">
+      <div class="inner">
+        <div class="head">
+          <div class="icon">
+            <img class="ui tiny image" [src]="item.icon">
+          </div>
 
-            <div class="head">
-                <div class="icon">
-                    <img class="ui tiny image" [src]="item.icon">
-                </div>
-
-                <div class="title">
-                    <span>{{item.date}}</span>
-                    {{item.title }}
-                </div>
-
-            </div>
-            <div class="body">
-                <p [innerHTML]="item.content"></p>
-            </div>
+          <div class="title">
+            <span>{{item.date}}</span>
+            {{item.title }}
+          </div>
 
         </div>
+        <div class="body">
+          <p [innerHTML]="item.content"></p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

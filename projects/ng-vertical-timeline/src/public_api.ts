@@ -5,4 +5,3 @@
 export * from './lib/ng-vertical-timeline.service';
 export * from './lib/ng-vertical-timeline.component';
 export * from './lib/ng-vertical-timeline.module';
-export * from './lib/card/card.component';

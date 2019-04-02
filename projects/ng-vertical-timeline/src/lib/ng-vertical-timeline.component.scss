@@ -30,9 +30,9 @@ $gradient-to: #004e92;
     margin: initial;
     padding: 10px 40px;
 
-    background-color: $light-color;
-    color: $primary-color;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: initial;
+    box-sizing: border-box;
+
 
     /* The circles on the timeline */
     &:after {
@@ -48,37 +48,45 @@ $gradient-to: #004e92;
       z-index: 1;
     }
 
-    .head {
-      display: flex;
-      align-items: center;
-      color: $light-color;
-      background-color: $primary-color;
-
-      .icon {
-        margin: 20px;
-        max-width: 50px;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      .title {
-        font-size: 24px;
-        text-transform: uppercase;
-
-        span {
-          display: block;
-          font-size: 14px;
-        }
-      }
-    }
-
-    .body {
+    .inner {
       background-color: $light-color;
-      padding: 20px;
+      color: $primary-color;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+      .head {
+        display: flex;
+        align-items: center;
+        color: $light-color;
+        background-color: $primary-color;
+
+        .icon {
+          margin: 20px;
+          max-width: 50px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .title {
+          font-size: 24px;
+          text-transform: uppercase;
+
+          span {
+            display: block;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .body {
+        background-color: $light-color;
+        padding: 20px;
+      }
     }
+
+
   }
 }
 
@@ -142,6 +150,7 @@ $gradient-to: #004e92;
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
   .timeline {
+
     /* Place the timelime to the left */
     &:after {
       left: 31px;
