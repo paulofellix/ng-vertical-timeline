@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.png" /></p>
+<p align="center"><img src="src/assets/images/logo.png" /></p>
 
 <h1 align="center"> Angular Vertical Timeline </h1>
 
