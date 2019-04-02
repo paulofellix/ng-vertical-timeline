@@ -20,7 +20,7 @@ $ npm i ng-vertical-timeline
 
 <h3> Demo</h3>
 
-<a href="http://stephen-bruere.com/demo/ng-vertical-timeline"> Link the the demo </a>
+<a href="http://stephen-bruere.com/#/en/demo/ng-vertical-timeline"> Link the the demo </a>
 
 <h3> Usage </h3>
 
