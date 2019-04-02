@@ -1,27 +1,81 @@
-# NgVerticalTimelineApp
+<p align="center"><img src="logo.png" /></p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+<h1 align="center"> Angular Vertical Timeline </h1>
 
-## Development server
+<p> Angular Vertical Timeline is an Angular 2+ Component that generates a vertical timeline with events. </p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h3> Download & Installation </h3>
 
-## Code scaffolding
+```shell
+$ npm i ng-vertical-timeline
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h3> Key features </h3>
 
-## Build
+<ul>
+  <li>Automatic ordering of the events</li>
+  <li>Responsive layout for mobile applications</li>
+  <li>Customisation made easily</li>
+</ul>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<h3> Demo</h3>
 
-## Running unit tests
+<a href="http://stephen-bruere.com/demo/ng-vertical-timeline"> Link the the demo </a>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<h3> Usage </h3>
 
-## Running end-to-end tests
+1 - Add the <b>NgVerticalTimelineModule</b> module to your <b>app.module.ts</b> file:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```html
+import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
+...
+@NgModule({
+  imports: [
+    ...
+    NgVerticalTimelineModule
+  ],
+...
+```
 
-## Further help
+2 - Create an array of events
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```html
+
+   events = [
+    {
+      id: 0,
+      title: 'My last travel',
+      content: 'There are so much countries in the world...',
+      date: '2016 - 2019',
+      icon: 'https://image.flaticon.com/icons/svg/214/214335.svg'
+    },
+    {
+      id: 1,
+      title: 'My Job',
+      content: 'The best job I could possibly get!',
+      date: '2015 - 2016',
+      icon: 'https://image.flaticon.com/icons/svg/1006/1006517.svg'
+    },
+    {
+      id: 2,
+      title: 'My Education',
+      content: 'This is the university I went...',
+      date: '2011',
+      icon: 'https://image.flaticon.com/icons/svg/1141/1141771.svg'
+    }
+  ];
+
+```
+
+3 - Add the selector ng-vertical-timeline to your componenent:
+
+```html
+
+<ng-vertical-timeline [data]="events"></ng-vertical-timeline>
+
+```
+
+
+<h3>License</h3>
+
+This project is licensed under the MIT License
