@@ -1,9 +1,14 @@
 {
   "name": "ng-vertical-timeline",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a Angular library that generates a vertical timeline.",
   "keywords" :["Angular","Library", "Timeline", "Component"],
   "license" : "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://gitlab.com/stephen.bruere/ng-vertical-timeline"
+  },
+  "homepage" :"http://stephen-bruere.com/demo/ng-vertical-timeline",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
