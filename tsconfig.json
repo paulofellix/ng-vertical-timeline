@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-vertical-timeline": [
+        "dist/ng-vertical-timeline"
+      ],
+      "ng-vertical-timeline/*": [
+        "dist/ng-vertical-timeline/*"
+      ]
+    }
   }
 }

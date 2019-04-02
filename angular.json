@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "ng-vertical-timeline": {
+      "root": "projects/ng-vertical-timeline",
+      "sourceRoot": "projects/ng-vertical-timeline/src",
+      "projectType": "library",
+      "prefix": "enl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-vertical-timeline/tsconfig.lib.json",
+            "project": "projects/ng-vertical-timeline/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-vertical-timeline/src/test.ts",
+            "tsConfig": "projects/ng-vertical-timeline/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-vertical-timeline/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-vertical-timeline/tsconfig.lib.json",
+              "projects/ng-vertical-timeline/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-vertical-timeline-app"
