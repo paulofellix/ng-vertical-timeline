@@ -4,7 +4,7 @@
 
     <div class="container left" [ngClass]="isPair(item.id)?'left':'right'">
       <div class="inner">
-        <div class="head">
+        <div class="head" [style.backgroundColor]="primaryColor">
           <div class="icon">
             <img class="ui tiny image" [src]="item.icon">
           </div>

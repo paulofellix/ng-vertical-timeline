@@ -9,6 +9,8 @@ import { TimelineEvent } from './timeline-event';
 export class NgVerticalTimelineComponent implements OnInit {
   @Input()
   data: TimelineEvent[];
+  @Input()
+  primaryColor: string;
 
   constructor() {}
 
