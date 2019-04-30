@@ -1,6 +1,6 @@
 {
   "name": "ng-vertical-timeline",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This is a Angular library that generates a vertical timeline.",
   "keywords" :["Angular","Library", "Timeline", "Component"],
   "license" : "MIT",
