@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.png" /></p>
+<p align="center"><img src="https://gitlab.com/stephen.bruere/ng-vertical-timeline/raw/master/src/assets/images/logo.png" height="200"/></p>
 
 <h1 align="center"> Angular Vertical Timeline </h1>
 
@@ -20,7 +20,7 @@ $ npm i ng-vertical-timeline
 
 <h3> Demo</h3>
 
-<a href="http://stephen-bruere.com/demo/ng-vertical-timeline"> Link the the demo </a>
+<a href="https://stackblitz.com/edit/ng-vertical-timeline"> Editor </a> / <a href="https://ng-vertical-timeline.stackblitz.io"> Demo </a>
 
 <h3> Usage </h3>
 
