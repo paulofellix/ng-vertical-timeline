@@ -1,6 +1,6 @@
 <p align="center"><img src="https://gitlab.com/stephen.bruere/ng-vertical-timeline/raw/master/src/assets/images/logo.png" height="200"/></p>
 
-<h1 align="center"> Angular Vertical Timeline </h1>
+# Angular2+ Vertical Timeline
 
 <p> Angular Vertical Timeline is an Angular 2+ Component that generates a vertical timeline with events. </p>
 
@@ -37,7 +37,7 @@ import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
 ...
 ```
 
-2 - Create an array of events
+2 - <b>Create an array</b> of events
 
 ```html
 
@@ -67,7 +67,7 @@ import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
 
 ```
 
-3 - Add the selector ng-vertical-timeline to your componenent:
+3 - Add the selector <b>ng-vertical-timeline</b> to your componenent:
 
 ```html
 
@@ -75,6 +75,7 @@ import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
 
 ```
 
+That's all!
 
 <h3>License</h3>
 
